@@ -7,10 +7,11 @@ interface BudgetCardProps {
     amount: number,
     maxAmount: number,
     gray?: boolean,
-    onAddExpenseClick: Function
+    onAddExpenseClick: Function,
+    hideButtons?: boolean
 }
 
-const BudgetCard: React.FC<BudgetCardProps> = ({name, amount, maxAmount, gray, onAddExpenseClick}: BudgetCardProps) => {
+const BudgetCard: React.FC<BudgetCardProps> = ({name, amount, maxAmount, gray, onAddExpenseClick, hideButtons}: BudgetCardProps) => {
 
     const classNames = [];
     if (amount > maxAmount) {
@@ -32,19 +33,21 @@ const BudgetCard: React.FC<BudgetCardProps> = ({name, amount, maxAmount, gray, o
                     <div className="me-2">{name}</div>
                     <div className="d-flex align-items-baseline">
                         {currencyFormatter.format(amount)}
-                        <span className="text-muted fs-6 ms-1">/ {currencyFormatter.format(maxAmount)}</span>
+                        {maxAmount &&
+                            <span className="text-muted fs-6 ms-1">/ {currencyFormatter.format(maxAmount)}</span>}
                     </div>
                 </Card.Title>
-                <ProgressBar
+                {maxAmount && <ProgressBar
                     className="rounded-pill"
                     min={0}
                     max={maxAmount}
                     now={amount}
-                    variant={getProgressBarVariant(amount, maxAmount)}/>
-                <Stack direction="horizontal" gap={2} className="mt-4">
-                    <Button variant="outline-primary" className="ms-auto" onClick={onAddExpenseClick}>Add Expense</Button>
+                    variant={getProgressBarVariant(amount, maxAmount)}/>}
+                {!hideButtons && <Stack direction="horizontal" gap={2} className="mt-4">
+                    <Button variant="outline-primary" className="ms-auto" onClick={onAddExpenseClick}>Add
+                        Expense</Button>
                     <Button variant="outline-secondary">View Expense</Button>
-                </Stack>
+                </Stack> }
             </Card.Body>
         </Card>
     );
