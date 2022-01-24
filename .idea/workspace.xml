@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee644979-1964-443b-8f83-e264738bc3ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Interfaces.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/contexts/BudgetContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useLocalStorage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AddBudgetModal.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BudgetCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BudgetCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/contexts/BudgetContext.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/BudgetContext.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +15,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="HTML File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -50,6 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.introduce.parameter.add.jsdoc" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../old_budget-app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -66,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643012426097</updated>
       <workItem from="1643012429026" duration="17000" />
-      <workItem from="1643012624908" duration="9323000" />
+      <workItem from="1643012624908" duration="11480000" />
     </task>
     <task id="LOCAL-00001" summary="removed react template code&#10;added simple container">
       <created>1643013849086</created>
@@ -82,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643016080633</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added context provider and local storage">
+      <created>1643024905023</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643024905023</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +94,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removed react template code&#10;added simple container" />
     <MESSAGE value="added Budget Card to display min, max budget and progress bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Budget Card to display min, max budget and progress bar" />
+    <MESSAGE value="Added context provider and local storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added context provider and local storage" />
   </component>
 </project>

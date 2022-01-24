@@ -6,8 +6,8 @@ import useLocalStorage from "../hooks/useLocalStorage";
 
 const BudgetContext = React.createContext<any>({});
 
-export function useBudget() {
-    useContext(BudgetContext);
+export function useBudgets() {
+    return useContext(BudgetContext);
 }
 
 
