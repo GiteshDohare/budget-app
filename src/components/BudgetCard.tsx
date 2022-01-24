@@ -6,10 +6,11 @@ interface BudgetCardProps {
     name: string,
     amount: number,
     maxAmount: number,
-    gray?: boolean
+    gray?: boolean,
+    onAddExpenseClick: Function
 }
 
-const BudgetCard: React.FC<BudgetCardProps> = ({name, amount, maxAmount, gray}: BudgetCardProps) => {
+const BudgetCard: React.FC<BudgetCardProps> = ({name, amount, maxAmount, gray, onAddExpenseClick}: BudgetCardProps) => {
 
     const classNames = [];
     if (amount > maxAmount) {
@@ -41,7 +42,7 @@ const BudgetCard: React.FC<BudgetCardProps> = ({name, amount, maxAmount, gray}: 
                     now={amount}
                     variant={getProgressBarVariant(amount, maxAmount)}/>
                 <Stack direction="horizontal" gap={2} className="mt-4">
-                    <Button variant="outline-primary" className="ms-auto">Add Expense</Button>
+                    <Button variant="outline-primary" className="ms-auto" onClick={onAddExpenseClick}>Add Expense</Button>
                     <Button variant="outline-secondary">View Expense</Button>
                 </Stack>
             </Card.Body>
