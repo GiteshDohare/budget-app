@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee644979-1964-443b-8f83-e264738bc3ca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Util.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/BudgetCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Interfaces.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/BudgetContext.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useLocalStorage.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BudgetCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BudgetCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="HTML File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -63,7 +66,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643012426097</updated>
       <workItem from="1643012429026" duration="17000" />
-      <workItem from="1643012624908" duration="3405000" />
+      <workItem from="1643012624908" duration="9323000" />
     </task>
     <task id="LOCAL-00001" summary="removed react template code&#10;added simple container">
       <created>1643013849086</created>
@@ -72,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643013849086</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added Budget Card to display min, max budget and progress bar">
+      <created>1643016080633</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643016080633</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +90,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="removed react template code&#10;added simple container" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed react template code&#10;added simple container" />
+    <MESSAGE value="added Budget Card to display min, max budget and progress bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Budget Card to display min, max budget and progress bar" />
   </component>
 </project>
