@@ -36,6 +36,16 @@ export const BudgetsProvider = ({children}: any) => {
     }
 
     const deleteBudget = (id: string) => {
+        // move all the expenses of deleted budget to Uncategorized
+        setExpenses(prevExpenses => {
+            return prevExpenses.map(expense => {
+                if (expense.budgetId !== id) {
+                    return expense;
+                }
+                return {...expense, budgetId: UNCATEGORIZED_BUDGET_ID}
+            })
+        })
+
         setBudgets((prevBudgets: Budget[]) => {
             return prevBudgets.filter(budget => budget.id !== id);
         })

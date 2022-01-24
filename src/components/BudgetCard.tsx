@@ -8,10 +8,19 @@ interface BudgetCardProps {
     maxAmount: number,
     gray?: boolean,
     onAddExpenseClick: Function,
+    onViewExpenseClick: Function
     hideButtons?: boolean
 }
 
-const BudgetCard: React.FC<BudgetCardProps> = ({name, amount, maxAmount, gray, onAddExpenseClick, hideButtons}: BudgetCardProps) => {
+const BudgetCard: React.FC<BudgetCardProps> = ({
+                                                   name,
+                                                   amount,
+                                                   maxAmount,
+                                                   gray,
+                                                   onAddExpenseClick,
+                                                   onViewExpenseClick,
+                                                   hideButtons
+                                               }: BudgetCardProps) => {
 
     const classNames = [];
     if (amount > maxAmount) {
@@ -46,8 +55,8 @@ const BudgetCard: React.FC<BudgetCardProps> = ({name, amount, maxAmount, gray, o
                 {!hideButtons && <Stack direction="horizontal" gap={2} className="mt-4">
                     <Button variant="outline-primary" className="ms-auto" onClick={onAddExpenseClick}>Add
                         Expense</Button>
-                    <Button variant="outline-secondary">View Expense</Button>
-                </Stack> }
+                    <Button variant="outline-secondary" onClick={onViewExpenseClick}>View Expense</Button>
+                </Stack>}
             </Card.Body>
         </Card>
     );
